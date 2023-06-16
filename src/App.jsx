@@ -5,6 +5,7 @@ import AboutPage from './pages/AboutPage/AboutPage';
 import UserProfile from './pages/UserProfile/UserProfile';
 import ContactPage from './pages/ContactPage/ContactPage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
+import BotbrawlPage from './pages/BotbrawlPage/BotbrawlPage';
 // import './App.scss';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<Navigate to="/" />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/botbrawl" element={<BotbrawlPage />} /> 
           <Route path="/users" element={<UserProfile />} />
           <Route path="/users/:id" element={<UserProfile />} />
           <Route path="/contact" element={<ContactPage />} />
