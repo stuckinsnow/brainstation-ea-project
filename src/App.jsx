@@ -5,10 +5,20 @@ import AboutPage from './pages/AboutPage/AboutPage';
 import UserProfile from './pages/UserProfile/UserProfile';
 import ContactPage from './pages/ContactPage/ContactPage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
+
+import VideoPlayer from './components/VideoPlayer/VideoPlayer'; 
+ 
 import BotbrawlPage from './pages/BotbrawlPage/BotbrawlPage';
+ 
 // import './App.scss';
 
 function App() {
+
+  // TODO
+  // make a video component
+  // make a vote
+
+
   return (
     <BrowserRouter>
       <div className="App">
