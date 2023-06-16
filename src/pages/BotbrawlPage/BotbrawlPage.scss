@@ -7,9 +7,14 @@
   justify-content: center;
   padding: 2rem;
 
+  background: #fff7f7;
+
   &__card {
-    width: 50%;
+    width: 100%;
     flex-basis: 50%;
+
+    //border: 2px solid orange;
+    margin: 2rem;
   }
 
   &__title {
@@ -18,69 +23,28 @@
     text-align: center;
   }
 
-  &__left {
-    &--videoplayer {
-      width: $px664;
-      background-color: red;
-      height: 400px;
-      border: 2px solid orange;
-      padding: 4rem;
-
-      iframe {
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
-
-  &__right {
+  .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
 
-    width: $px488;
-
-    .chatGPT {
-      height: $px400;
-      border: medium solid black;
-
-      &--title {
-        text-align: right;
-      }
-    }
-
-    &--icons {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-
-      .btn {
-        background-color: transparent;
-        border-radius: 50%;
-        height: $px70;
-        width: $px70;
-        border: medium solid black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: $px66;
-      }
-
-      .like-btn {
-      }
-
-      .dislike-btn {
-      }
-    }
+    //border: 2px solid orange;
   }
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 
 div.maincontent__left--videoplayer {
-  width: 500px;
+  iframe {
+    width: 664px;
+    height: 400px;
+  }
+}
+
+div.maincontent__right {
+  .chatGPT {
+    width: 488px;
+    height: 400px;
+    background-color: #fff;
+    padding: 2rem;
+    overflow: auto;
+  }
 }
