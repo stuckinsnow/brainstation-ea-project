@@ -2,9 +2,8 @@ import "./BotbrawlPage.scss";
 
 import React, { useState } from "react";
 
-import up from '../../assets/icons/Group5.png';
-import down from '../../assets/icons/Group4.png';
-
+import up from "../../assets/icons/Group5.png";
+import down from "../../assets/icons/Group4.png";
 
 function BotbrawlPage() {
   const segments = [
@@ -37,7 +36,7 @@ function BotbrawlPage() {
           </h1>
 
           <div className="maincontent__right--title">
-            <h2>Transcript from last game</h2>
+            <h2 id="something">Transcript from last game</h2>
           </div>
 
           <div className="container">
