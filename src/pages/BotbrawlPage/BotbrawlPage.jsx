@@ -34,26 +34,26 @@ function BotbrawlPage() {
 
           <div className="maincontent__card maincontent__left">
             <div className="maincontent__left--videoplayer">
-              <div>
+              {/* <div>
                 <div className="video-container">
-                  <div className="video-container__video">
+                  <div className="video-container__video"> */}
                     <iframe
-                      width="560"
-                      height="315"
+                    //   width="664"
+                    //   height="400"
                       src={videoURL}
                       title="Video Player"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                     ></iframe>
-                  </div>
+                  {/* </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div className="maincontent__card maincontent__right">
-            <div>Transcript from last game</div>
+            <div className="maincontent__right--title">Transcript from last game</div>
 
             <div className="chatGPT">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
@@ -63,11 +63,11 @@ function BotbrawlPage() {
             </div>
 
             <div className="maincontent__right--icons">
-              <div className="">Up</div>
-              <button onClick={handleAction}>Like</button>
+              <div onClick={handleAction} className="btn like-btn">Up</div>
+              {/* <button onClick={handleAction}>Like</button> */}
 
-              <div className="">Down</div>
-              <button onClick={handleAction}>Dislike</button>
+              <div onClick={handleAction} className="btn dislike-btn">Down</div>
+              {/* <button onClick={handleAction}>Dislike</button> */}
             </div>
           </div>
         </section>
