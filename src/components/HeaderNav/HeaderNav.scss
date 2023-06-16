@@ -1,0 +1,29 @@
+// @import "../../styles/fonts";
+// @import "../../styles/variables";
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/fonts" as *;
+
+.header {
+  background-color: $Gray;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  font-family: "Duke";
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    a {
+      text-decoration: none;
+      color: $White;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
