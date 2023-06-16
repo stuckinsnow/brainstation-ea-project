@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const VideoPlayer = () => {
   const segments = [
@@ -22,38 +22,40 @@ const VideoPlayer = () => {
     });
   };
 
-
-  //TODO 
+  //TODO
   /**
-    *  remove picture in picture
-    * 
-    *  video subtitles on the right? youtube api???
-    * 
-    *   liked fragment send to backend // => backend API endpoint?
-    * 
-    *   
-    * 
-    * 
-    **/
+   *  remove picture in picture
+   *
+   *  video subtitles on the right? youtube api???
+   *
+   *   liked fragment send to backend // => backend API endpoint?
+   *
+   *
+   *
+   *
+   **/
 
   return (
     <div>
-      <iframe 
-        width="560" 
-        height="315" 
-        src={videoURL} 
-        title="Video Player" 
-        frameBorder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowFullScreen
-      ></iframe>
-      <button onClick={handleAction}>Like</button>
-      <button onClick={handleAction}>Dislike</button>
+      <div className="video-container">
+        <div className="video-container__video">
+          <iframe
+            width="560"
+            height="315"
+            src={videoURL}
+            title="Video Player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <div className="video-container__buttons">
+          <button onClick={handleAction}>Like</button>
+          <button onClick={handleAction}>Dislike</button>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default VideoPlayer;
-
-
-
