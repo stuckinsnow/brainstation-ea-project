@@ -1,13 +1,16 @@
 @use "../../styles/converstions" as *;
 
+@use "../../styles/fonts" as *;
+
 .maincontent {
+  font-family: "Duke";
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem;
 
-  background: #fff7f7;
+  background: url("../../assets/images/apex-section-bg-homepage-news-xl.jpg.adapt.1920w.jpg");
 
   &__card {
     width: 100%;
@@ -21,6 +24,7 @@
     width: 100%;
     align-items: center;
     text-align: center;
+    font-size: 96px;
   }
 
   .container {
@@ -46,6 +50,8 @@ div.maincontent__right {
     background-color: #fff;
     padding: 2rem;
     overflow: auto;
+    font-weight: 400;
+    font-family: "Open sans";
   }
 
   &--icons {
@@ -54,4 +60,9 @@ div.maincontent__right {
     justify-content: space-around;
     flex-direction: row;
   }
+}
+
+h2 {
+  margin-left: 680px;
+  font-size: 48px;
 }
