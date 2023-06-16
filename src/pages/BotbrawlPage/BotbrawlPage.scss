@@ -1,6 +1,9 @@
 @use "../../styles/converstions" as *;
 
+@use "../../styles/fonts" as *;
+
 .maincontent {
+  font-family: "Duke";
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -21,6 +24,7 @@
     width: 100%;
     align-items: center;
     text-align: center;
+    font-size: 96px;
   }
 
   .container {
@@ -46,5 +50,12 @@ div.maincontent__right {
     background-color: #fff;
     padding: 2rem;
     overflow: auto;
+    font-weight: 400;
+    font-family: "Open sans";
   }
+}
+
+h2 {
+  margin-left: 680px;
+  font-size: 48px;
 }
