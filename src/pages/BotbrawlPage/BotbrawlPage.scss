@@ -47,4 +47,11 @@ div.maincontent__right {
     padding: 2rem;
     overflow: auto;
   }
+
+  &--icons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
 }
