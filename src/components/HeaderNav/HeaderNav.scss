@@ -1,12 +1,15 @@
-@import "../../styles/fonts";
-@import "../../styles/variables";
+// @import "../../styles/fonts";
+// @import "../../styles/variables";
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/fonts" as *;
 
 .header {
   background-color: $Gray;
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  font-family: $Duke;
+  font-family: "Duke";
 
   &__links {
     display: flex;
