@@ -1,0 +1,25 @@
+@import "../../styles/fonts";
+@import "../../styles/variables";
+
+.header {
+  background-color: $Gray;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    a {
+      text-decoration: none;
+      color: $White;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
