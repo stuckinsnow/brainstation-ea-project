@@ -32,42 +32,50 @@ function BotbrawlPage() {
             Bot Brawl Vocal Training Academy
           </h1>
 
-          <div className="maincontent__card maincontent__left">
-            <div className="maincontent__left--videoplayer">
-              {/* <div>
+          <div className="container">
+            <div className="maincontent__card maincontent__left">
+              <div className="maincontent__left--videoplayer">
+                {/* <div>
                 <div className="video-container">
                   <div className="video-container__video"> */}
-                    <iframe
-                    //   width="664"
-                    //   height="400"
-                      src={videoURL}
-                      title="Video Player"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                  {/* </div>
+                <iframe
+                  //   width="664"
+                  //   height="400"
+                  src={videoURL}
+                  title="Video Player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                {/* </div>
                 </div>
               </div> */}
-            </div>
-          </div>
-
-          <div className="maincontent__card maincontent__right">
-            <div className="maincontent__right--title">Transcript from last game</div>
-
-            <div className="chatGPT">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-              maxime nam, nemo ab odit dolores voluptas dolorum provident illo
-              doloribus quidem, officiis error deleniti soluta. Ea sapiente qui
-              quidem minima!
+              </div>
             </div>
 
-            <div className="maincontent__right--icons">
-              <div onClick={handleAction} className="btn like-btn">Up</div>
-              {/* <button onClick={handleAction}>Like</button> */}
+            <div className="maincontent__card maincontent__right">
+              <div className="maincontent__right--title">
+                Transcript from last game
+              </div>
 
-              <div onClick={handleAction} className="btn dislike-btn">Down</div>
-              {/* <button onClick={handleAction}>Dislike</button> */}
+              <div className="chatGPT">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat maxime nam, nemo ab odit dolores voluptas dolorum
+                provident illo doloribus quidem, officiis error deleniti soluta.
+                Ea sapiente qui quidem minima!
+              </div>
+
+              <div className="maincontent__right--icons">
+                <div onClick={handleAction} className="btn like-btn">
+                  Up
+                </div>
+                {/* <button onClick={handleAction}>Like</button> */}
+
+                <div onClick={handleAction} className="btn dislike-btn">
+                  Down
+                </div>
+                {/* <button onClick={handleAction}>Dislike</button> */}
+              </div>
             </div>
           </div>
         </section>
