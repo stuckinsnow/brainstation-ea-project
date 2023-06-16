@@ -73,3 +73,14 @@ div.maincontent__right {
   margin-left: 680px;
   font-size: 48px;
 }
+
+.transcript-text {
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: lightgray;
+
+  &.blue {
+    background-color: lightblue;
+  }
+}
