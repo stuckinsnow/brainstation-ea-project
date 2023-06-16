@@ -5,11 +5,6 @@ import './BotbrawlPage.scss';
 function BotbrawlPage() {
     return (
         <div>
-
-            <header>
-                header goes here, it can be refactored later
-            </header>
-
             <main>
                 <section className='maincontent'>
                     <h1 className='maincontent__title'>Bot Brawl Vocal Training Academy</h1>
