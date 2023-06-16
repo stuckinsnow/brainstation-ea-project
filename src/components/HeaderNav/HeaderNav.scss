@@ -1,15 +1,18 @@
 // @import "../../styles/fonts";
 // @import "../../styles/variables";
+
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 @use "../../styles/fonts" as *;
+@use "../../styles/converstions" as *;
 
 .header {
-  background-color: $Gray;
+  background-color: $Black;
   display: flex;
   flex-direction: column;
   padding: 2rem;
   font-family: "Duke";
+  font-size: $px24;
 
   &__links {
     display: flex;
@@ -18,6 +21,18 @@
     a {
       text-decoration: none;
       color: $White;
+      transition: background-color 500ms ease-in-out;
+    }
+
+    a:hover {
+      background-color: $Maroon;
+    }
+  }
+
+  &__logo {
+    img {
+      width: 82px;
+      height: 56px;
     }
   }
 
@@ -25,5 +40,36 @@
     display: flex;
     flex-direction: row;
     gap: 3rem;
+    margin-top: 0.3rem;
+
+    img {
+      width: 24px;
+      height: 24px;
+      margin-top: 4px;
+    }
+
+    &--drop-down {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+  }
+
+  &__btn {
+    button {
+      background-color: $Maroon;
+      width: 183px;
+      height: 48px;
+      font-family: "Duke";
+      font-size: $px24;
+      color: $White;
+      border: none;
+      transition: background-color 500ms ease-in-out;
+
+      &:hover {
+        background-color: $White;
+        color: $Black;
+      }
+    }
   }
 }
