@@ -42,6 +42,7 @@
 }
 
 div.maincontent__left--videoplayer {
+  border: solid thin black;
   iframe {
     width: 664px;
     height: 400px;
@@ -56,6 +57,7 @@ div.maincontent__right {
     padding: 2rem;
     overflow: auto;
     font-weight: 400;
+    border: solid thin black;
     font-family: "Open sans";
   }
 
