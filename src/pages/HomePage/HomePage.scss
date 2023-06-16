@@ -1,8 +1,38 @@
 .homepage {
-    margin: 0;
+    margin: auto;
   background-image: url(../../assets/images/hero1.png), url(../../assets/images/hero2.png), url(../../assets/images/hero3.png);
   background-position: top left, center left, bottom left;
   background-repeat: no-repeat;
   background-size: 100%;
   height: 300vh;
 }
+h2 {
+    margin: 0;
+    padding-top: 10rem;
+}
+
+.homepage__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    font-family: Duke;
+  }
+  
+  .homepage__container h2 {
+    font-size: 136px;
+  }
+  
+  .homepage__container p {
+    font-size: 48px;
+  }
+  
+  .homepage__container h1,
+  .homepage__container div {
+    font-size: 48px;
+  }
+  
+  
