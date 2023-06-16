@@ -23,10 +23,6 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <HeaderNav />
-
-        <h1>Hackathon basic page</h1>
-        <h2>Let's hack together</h2>
-
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<Navigate to="/" />} />
