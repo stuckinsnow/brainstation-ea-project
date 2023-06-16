@@ -2,6 +2,10 @@ import "./BotbrawlPage.scss";
 
 import React, { useState } from "react";
 
+import up from '../../assets/icons/Group5.png';
+import down from '../../assets/icons/Group4.png';
+
+
 function BotbrawlPage() {
   const segments = [
     { id: 1, start: 0, end: 10 },
@@ -106,12 +110,12 @@ function BotbrawlPage() {
 
               <div className="maincontent__right--icons">
                 <div onClick={handleAction} className="btn like-btn">
-                  Up
+                  <img src={up} />
                 </div>
                 {/* <button onClick={handleAction}>Like</button> */}
 
                 <div onClick={handleAction} className="btn dislike-btn">
-                  Down
+                  <img src={down} />
                 </div>
                 {/* <button onClick={handleAction}>Dislike</button> */}
               </div>

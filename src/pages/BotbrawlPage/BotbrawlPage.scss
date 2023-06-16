@@ -53,6 +53,13 @@ div.maincontent__right {
     font-weight: 400;
     font-family: "Open sans";
   }
+
+  &--icons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
 }
 
 h2 {
