@@ -1,3 +1,50 @@
-.chatGPT {
-    color: red;
+.maincontent {
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+
+&__card {
+    width: 50%;
+    flex-basis: 50%;
+}
+
+&__title {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+
+&__left {
+
+    &--videoplayer {
+        background-color: red;
+        height: 400px;
+    }
+    
+}
+
+&__right {
+    display: flex;
+    flex-direction: column;
+
+    .chatGPT {
+        width: 488px;
+        height: 400px;
+        left: 832px;
+        top: 401px;
+    
+    }
+
+    &--icons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
 }
