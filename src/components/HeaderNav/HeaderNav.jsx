@@ -3,11 +3,9 @@ import "./HeaderNav.scss";
 import logo from "../../assets/logo/logo.png";
 import navIcon from "../../assets/icons/uiw_down.png";
 
-
 function handleClick() {
   window.location.href = "/";
 }
-
 
 function HeaderNav() {
   return (
@@ -15,9 +13,9 @@ function HeaderNav() {
       <div className="header">
         <div className="header__icons"></div>
         <div className="header__links">
-        <div className="header__logo" onClick={handleClick}>
-      <img src={logo} alt="Apex Legends Logo" />
-    </div>
+          <div className="header__logo" onClick={handleClick}>
+            <img src={logo} alt="Apex Legends Logo" />
+          </div>
           <div className="header__nav">
             <nav className="header__nav">
               <div className="header__nav--drop-down">
@@ -50,7 +48,13 @@ function HeaderNav() {
             </nav>
           </div>
           <div className="header__btn">
-          <button onClick={() => { window.location.href = '/botbrawl'; }}>Train your bot</button>
+            <button
+              onClick={() => {
+                window.location.href = "/botbrawl";
+              }}
+            >
+              Train your bot
+            </button>
           </div>
         </div>
       </div>
