@@ -10,7 +10,7 @@ import VideoPlayer from './components/VideoPlayer/VideoPlayer';
  
 import BotbrawlPage from './pages/BotbrawlPage/BotbrawlPage';
  
-// import './App.scss';
+import './App.css';
 
 function App() {
 
