@@ -11,10 +11,14 @@ function BotbrawlPage() {
       "Player_1": "If you get a gunhouse comment instantly and me and Evan can jump off and we just fight bro but they might just 50 50 you guys up top I don’t know if I should go",
       "Player_2": "I might go up top though like you’re on the entrance side yeah",
       "YOU": "I’m going Bottom mid too I’m going Bottom mid with this guy"} },
-    { id: 2, start: 100, end: 110 },
-    { id: 3, start: 200, end: 210 },
-    { id: 4, start: 300, end: 310 },
-    { id: 5, start: 400, end: 410 },
+    { id: 2, start: 100, end: 110, transcript: {
+      "Player_1": "There's literally no way across the wall without getting shot from high I could, run out right here and Lily wall right against the truck",
+      "Player_2": "Go ahead you say you want to do it so bad go ahead Kevin",
+      "YOU": "Holy f*ck my ideal right there you want to swing out and kill"} },
+    { id: 3, start: 200, end: 210, transcript: {
+      "Player_1": "He'll never listen to him again.",
+      "Player_2": "F*ck all right f*ck why didn't you read my mind right there",
+      "YOU": "I tried reading your mind, but it is pretty hard from all the way over here bro."} },
   ];
 
   const [currentSegmentIndex, setCurrentSegmentIndex] = useState(0);
@@ -29,6 +33,8 @@ function BotbrawlPage() {
       return nextIndex >= segments.length ? 0 : nextIndex;
     });
   };
+
+  const keys = Object.keys(currentSegment.transcript)
 
   return (
     <div>
@@ -65,11 +71,8 @@ function BotbrawlPage() {
 
             <div className="maincontent__card maincontent__right">
               <div className="chatGPT">
-                {currentSegment.transcript.map((seg, index) => {
-                  <div id={index}>seg</div>
-                })}
-
-
+                {keys.map((key, index) => <div id={key} className={`transcript-text ${key === "YOU" ? "blue" : ""}`}>{currentSegment.transcript[key]}</div>
+                )}
               </div>
 
               <div className="maincontent__right--icons">
