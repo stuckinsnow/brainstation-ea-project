@@ -12,11 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <HeaderNav />
-
-        <h1>Hackathon basic page</h1>
-        <h2>Let's hack together</h2>
-
+        {/* <HeaderNav /> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<Navigate to="/" />} />

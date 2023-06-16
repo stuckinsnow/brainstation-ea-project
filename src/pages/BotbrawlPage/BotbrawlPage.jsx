@@ -1,24 +1,32 @@
-function BotbrawlPage(){
+import './BotbrawlPage.scss';
+
+function BotbrawlPage() {
     return (
         <div>
 
-        <header>
-header goes here, it can be refactored later
+            <header>
+                header goes here, it can be refactored later
+            </header>
 
-        </header>
+            <main>
 
-        <main>
+                <section>
+                    <h1>Bot Brawl Vocal Training Academy</h1>
 
-            <section>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatibus quae ratione sunt, sed fugit quaerat corrupti accusamus iure, error minima sit delectus harum vel ea, tenetur assumenda dolores. Dicta!
-            </section>
+                    <div>
+                        Transcript from last game
+                    </div>
+                    <div id="videoPlayer">
 
+                    </div>
 
-        </main>
+                    <div className="chatGPT">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat maxime nam, nemo ab odit dolores voluptas dolorum provident illo doloribus quidem, officiis error deleniti soluta. Ea sapiente qui quidem minima!
+                    </div>
 
+                </section>
 
-
-
+            </main>
 
         </div>
     )
