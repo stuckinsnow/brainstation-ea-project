@@ -1,7 +1,7 @@
 # Industry Hackathon Group Project for EA Sports
 # 🦾 APEX LEGENDS BOT BRAWL 🎮
 
-EA Sports posed the question: "how can we enhance interaction between gamers?" This winning project is our answer to this. 
+EA Sports posed the question: "how can we enhance interaction between gamers?"
 
 <img width="1440" alt="bot-brawl-homepage-ss" src="https://github.com/stuckinsnow/brainstation-ea-project/assets/79944634/7b5c5d06-eaef-49ec-a318-d7e74594f55e">
 
